@@ -245,6 +245,86 @@
     <Compile Include="DartProjectTracker.cs" />
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="IconRegistration.cs" />
+    <Compile Include="OptionsPages\AdvancedOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\AdvancedOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\AdvancedOptionsControl.Designer.cs">
+      <DependentUpon>AdvancedOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingGeneralOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingGeneralOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingGeneralOptionsControl.Designer.cs">
+      <DependentUpon>FormattingGeneralOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingIndentationOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingIndentationOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingIndentationOptionsControl.Designer.cs">
+      <DependentUpon>FormattingIndentationOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingIndentationOptionsTree.xaml.cs">
+      <DependentUpon>FormattingIndentationOptionsTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingNewLinesOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingNewLinesOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingNewLinesOptionsControl.Designer.cs">
+      <DependentUpon>FormattingNewLinesOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingNewLinesOptionsTree.xaml.cs">
+      <DependentUpon>FormattingNewLinesOptionsTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingSpacingOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingSpacingOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingSpacingOptionsControl.Designer.cs">
+      <DependentUpon>FormattingSpacingOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingSpacingOptionsTree.xaml.cs">
+      <DependentUpon>FormattingSpacingOptionsTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingWrappingOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingWrappingOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingWrappingOptionsControl.Designer.cs">
+      <DependentUpon>FormattingWrappingOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\FormattingWrappingOptionsTree.xaml.cs">
+      <DependentUpon>FormattingWrappingOptionsTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\IntellisenseOptions.cs">
+      <SubType>component</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\IntellisenseOptionsControl.cs">
+      <SubType>usercontrol</SubType>
+    </Compile>
+    <Compile Include="OptionsPages\IntellisenseOptionsControl.Designer.cs">
+      <DependentUpon>IntellisenseOptionsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsPages\LabelIndentationMode.cs" />
+    <Compile Include="OptionsPages\OperatorSpacingMode.cs" />
+    <Compile Include="OptionsPages\OptionsTreeView.cs">
+      <SubType>component</SubType>
+    </Compile>
     <Compile Include="ProjectSystem\Automation\OAJarReference.cs" />
     <Compile Include="ProjectSystem\Controls\FileBrowserTextBox.cs">
       <SubType>usercontrol</SubType>
@@ -367,6 +447,27 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <EmbeddedResource Include="OptionsPages\AdvancedOptionsControl.resx">
+      <DependentUpon>AdvancedOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsPages\FormattingGeneralOptionsControl.resx">
+      <DependentUpon>FormattingGeneralOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsPages\FormattingIndentationOptionsControl.resx">
+      <DependentUpon>FormattingIndentationOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsPages\FormattingNewLinesOptionsControl.resx">
+      <DependentUpon>FormattingNewLinesOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsPages\FormattingSpacingOptionsControl.resx">
+      <DependentUpon>FormattingSpacingOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsPages\FormattingWrappingOptionsControl.resx">
+      <DependentUpon>FormattingWrappingOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsPages\IntellisenseOptionsControl.resx">
+      <DependentUpon>IntellisenseOptionsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProjectSystem\Controls\FileBrowserTextBox.resx">
       <DependentUpon>FileBrowserTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +517,24 @@
       <Project>{65ebab30-e636-4515-8315-4f42cf29b6f3}</Project>
       <Name>DanTup.DartAnalysis</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="OptionsPages\FormattingIndentationOptionsTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OptionsPages\FormattingNewLinesOptionsTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OptionsPages\FormattingSpacingOptionsTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OptionsPages\FormattingWrappingOptionsTree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Condition="Exists($(VsSdkTargets))" Project="$(VsSdkTargets)" />

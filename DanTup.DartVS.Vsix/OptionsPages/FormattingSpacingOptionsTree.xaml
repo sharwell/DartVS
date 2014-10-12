@@ -1,0 +1,152 @@
+﻿<UserControl x:Class="DanTup.DartVS.OptionsPages.FormattingSpacingOptionsTree"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <UniformGrid Columns="1">
+        <TreeView Name="treeView1">
+            <TreeViewItem Header="Set spacing for method declarations" IsExpanded="True">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInMethodDeclarationNameParenthesis" Content="Insert space between method name and its opening parentheses" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInDeclarationArgumentListParentheses" Content="Insert space within argument list parentheses" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInDeclarationEmptyArgumentList" Content="Insert space within empty argument list parentheses" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Set spacing for method calls" IsExpanded="True">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInMethodCallNameParenthesis" Content="Insert space between method name and its opening parentheses" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInCallArgumentListParentheses" Content="Insert space within argument list parentheses" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInCallEmptyArgumentList" Content="Insert space within empty argument list parentheses" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Set other spacing options" IsExpanded="True">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceAfterKeywordsInControlFlow"  Content="Insert space after keywords in control flow statements" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInExpressionParentheses" Content="Insert space within parentheses of expressions" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInTypeCastParentheses" Content="Insert space within parentheses of type casts" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInControlFlowParentheses" Content="Insert spaces inside parentheses for control flow statements" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceAfterCast" Content="Insert space after cast" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkIgnoreSpaceInDeclarations" Content="Ignore spaces in declaration statements" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Set spacing for brackets" IsExpanded="True">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceBeforeOpenBracket" Content="Insert space before open square bracket" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInEmptyBrackets" Content="Insert space within empty square brackets" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceInBrackets" Content="Insert spaces within square brackets" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Set spacing for delimiters" IsExpanded="True">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceAfterColonInTypeDeclaration" Content="Insert space after colon for base or interface in type declaration" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceAfterComma" Content="Insert space after comma" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceAfterDot" Content="Insert space after dot" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceAfterSemiInForStatement" Content="Insert space after semicolon in &quot;for&quot; statement" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceBeforeColonInTypeDeclaration" Content="Insert space before colon for base or interface in type declaration" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceBeforeComma" Content="Insert space before comma" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceBeforeDot" Content="Insert space before dot" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkSpaceBeforeSemiInForStatement" Content="Insert space before semicolon in &quot;for&quot; statement" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Set spacing for operators" IsExpanded="True">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <RadioButton Name="radOperatorInsertSpace" Content="Insert space before and after binary operators" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <RadioButton Name="radOperatorIgnoreSpace" Content="Ignore spaces around binary operators" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <RadioButton Name="radOperatorRemoveSpace" Content="Remove spaces before and after binary operators" />
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+        <TextBox Name="textBox1" IsReadOnly="True" />
+    </UniformGrid>
+</UserControl>

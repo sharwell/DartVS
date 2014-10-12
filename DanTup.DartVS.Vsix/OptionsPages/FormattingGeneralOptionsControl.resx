@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -112,41 +112,12 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="203" xml:space="preserve">
-    <value>Advanced</value>
-    <comment>Advanced language options page name</comment>
-  </data>
-  <data name="204" xml:space="preserve">
-    <value>IntelliSense</value>
-    <comment>IntelliSense language options page name</comment>
-  </data>
-  <data name="210" xml:space="preserve">
-    <value>Formatting</value>
-    <comment>Formatting language options category</comment>
-  </data>
-  <data name="211" xml:space="preserve">
-    <value>General</value>
-    <comment>Formatting -&gt; General language options page</comment>
-  </data>
-  <data name="212" xml:space="preserve">
-    <value>Indentation</value>
-    <comment>Formatting -&gt; Indentation language options page</comment>
-  </data>
-  <data name="213" xml:space="preserve">
-    <value>New Lines</value>
-    <comment>Formatting -&gt; New Lines language options page</comment>
-  </data>
-  <data name="214" xml:space="preserve">
-    <value>Spacing</value>
-    <comment>Formatting -&gt; Spacing language options page</comment>
-  </data>
-  <data name="215" xml:space="preserve">
-    <value>Wrapping</value>
-    <comment>Formatting -&gt; Wrapping language options page</comment>
-  </data>
+  <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
 </root>

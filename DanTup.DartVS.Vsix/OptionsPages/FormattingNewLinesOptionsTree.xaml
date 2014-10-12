@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="DanTup.DartVS.OptionsPages.FormattingNewLinesOptionsTree"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <UniformGrid Columns="1">
+        <TreeView Name="treeView1">
+            <TreeViewItem IsExpanded="True" Header="New line options for braces">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkOpenBraceOnNewLineTypes" Content="Place open brace on new line for types"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkOpenBraceOnNewLineMethods" Content="Place open brace on new line for methods"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <!--<TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place open brace on new line for anonymous methods"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>-->
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkOpenBraceOnNewLineControlBlocks" Content="Place open brace on new line for control blocks"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <!--<TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place open brace on new line for anonymous types"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place open brace on new line for object initializers"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place open brace on new line for lambda expressions"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>-->
+            </TreeViewItem>
+            <TreeViewItem IsExpanded="True" Header="New line options for keywords">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Name="chkElseOnNewLine" Content="Place &quot;else&quot; on new line"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <!--<TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place &quot;catch&quot; on new line"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place &quot;finally&quot; on new line"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>-->
+            </TreeViewItem>
+            <!--<TreeViewItem IsExpanded="True" Header="New line options for expressions">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place members in object initializers on new line"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place members in anonymous types on new line"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <CheckBox Content="Place query expression clauses on new line"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>-->
+        </TreeView>
+        <TextBox Name="textBox1" IsReadOnly="True" />
+    </UniformGrid>
+</UserControl>

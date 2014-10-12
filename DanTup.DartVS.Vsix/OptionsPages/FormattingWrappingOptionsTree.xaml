@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DanTup.DartVS.OptionsPages.FormattingWrappingOptionsTree"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <UniformGrid Columns="1">
+        <TreeView Name="treeView1">
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <CheckBox Name="chkLeaveBlockOnSingleLine" Content="Leave block on single line"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <CheckBox Name="chkLeaveStatementsOnSameLine" Content="Leave statements and member declarations on the same line"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+        </TreeView>
+        <TextBox Name="textBox1" IsReadOnly="True" />
+    </UniformGrid>
+</UserControl>

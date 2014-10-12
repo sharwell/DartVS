@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="DanTup.DartVS.OptionsPages.FormattingIndentationOptionsTree"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Height="300" Width="300">
+    <UniformGrid Columns="1">
+        <TreeView Name="treeView1">
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <CheckBox Name="chkIndentBlockContents" Content="Indent block contents"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <CheckBox Name="chkIndentOpenAndCloseBraces" Content="Indent open and close braces"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <CheckBox Name="chkIndentCaseContents" Content="Indent case contents"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <CheckBox Name="chkIndentCaseLabels" Content="Indent case labels"/>
+                </TreeViewItem.Header>
+            </TreeViewItem>
+            <TreeViewItem IsExpanded="True" Header="Label Indentation">
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <RadioButton Name="radLabelsLeftmost" Content="Place goto labels in leftmost column"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <RadioButton Name="radLabelsOneLeft" Content="Place goto labels one indent less than current"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <RadioButton Name="radLabelsNormal" Content="Indent labels normally"/>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+        <TextBox Name="textBox1" IsReadOnly="True" />
+    </UniformGrid>
+</UserControl>

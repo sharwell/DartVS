@@ -3,6 +3,7 @@ using System.ComponentModel.Composition;
 using System.ComponentModel.Design;
 using System.Threading.Tasks;
 using DanTup.DartAnalysis;
+using DanTup.DartVS.OptionsPages;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.Editor;
@@ -15,6 +16,17 @@ namespace DanTup.DartVS
 	[ProvideAutoLoad(VSConstants.UICONTEXT.SolutionExists_string)]
 	[ProvideLanguageService(typeof(DartLanguageInfo), DartConstants.LanguageName, 100)]
 	[ProvideLanguageExtension(typeof(DartLanguageInfo), DartConstants.FileExtension)]
+
+	[ProvideLanguageEditorOptionPage(typeof(AdvancedOptions), DartConstants.LanguageName, "", "Advanced", "#203")]
+	[ProvideLanguageEditorOptionPage(typeof(IntellisenseOptions), DartConstants.LanguageName, "", "IntelliSense", "#204")]
+
+	[ProvideLanguageEditorToolsOptionCategory(DartConstants.LanguageName, "Formatting", "#210")]
+	[ProvideLanguageEditorOptionPage(typeof(FormattingGeneralOptions), DartConstants.LanguageName, "Formatting", "General", "#211")]
+	[ProvideLanguageEditorOptionPage(typeof(FormattingIndentationOptions), DartConstants.LanguageName, "Formatting", "Indentation", "#212")]
+	[ProvideLanguageEditorOptionPage(typeof(FormattingNewLinesOptions), DartConstants.LanguageName, "Formatting", "NewLines", "#213")]
+	[ProvideLanguageEditorOptionPage(typeof(FormattingSpacingOptions), DartConstants.LanguageName, "Formatting", "Spacing", "#214")]
+	[ProvideLanguageEditorOptionPage(typeof(FormattingWrappingOptions), DartConstants.LanguageName, "Formatting", "Wrapping", "#215")]
+
 	public sealed class DartPackage : Package
 	{
 		[Import]
